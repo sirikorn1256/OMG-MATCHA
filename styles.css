@@ -70,15 +70,15 @@ body {
    font-weight: 500;
  }
  /* 🍵 Tea Cards */
-/* 🍵 Tea Card (3 รูปเรียงเท่ากัน) */
+/* 🍵 Tea Cards (ปรับให้รูปเท่ากันทุกใบแบบพอดีสองรูปแรก) */
 .tea-card {
    border-radius: 18px;
    background: #ffffff;
    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.07);
    transition: transform 0.3s ease, box-shadow 0.3s ease;
    overflow: hidden;
-   padding: 0;
    text-align: center;
+   padding: 0;
  }
  
  .tea-card:hover {
@@ -88,15 +88,17 @@ body {
  
  .tea-card img {
    width: 100%;
-   height: 320px; /* 🔹 ขนาดพอดี ไม่ใหญ่ไม่เล็ก */
-   object-fit: cover;
+   height: 480px; /* ✅ เท่ากับสองรูปแรก (ปรับมาให้เป๊ะ) */
+   object-fit: cover; /* ✅ ครอปให้เต็มกล่องแต่ยังไม่บิดภาพ */
    border-radius: 18px;
+   display: block;
+   margin: 0 auto;
  }
  
- /* 📱 Responsive */
+ /* 📱 Responsive (มือถือเล็กลงหน่อย) */
  @media (max-width: 768px) {
    .tea-card img {
-     height: 250px; /* 🔹 ลดขนาดสำหรับมือถือ */
+     height: 320px;
    }
  }
  /* 🍃 Auto Slide Image */
