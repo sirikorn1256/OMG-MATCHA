@@ -1,0 +1,173 @@
+/* 🌱 Global Style */
+body {
+   font-family: "Prompt", sans-serif;
+   background: #f4fff7;
+   color: #263a29;
+   margin: 0;
+   scroll-behavior: smooth;
+ }
+ 
+ /* ✨ Navbar */
+ .navbar {
+   background: linear-gradient(90deg, #d6e6c3, #c4d89c);
+   border-radius: 0 0 15px 15px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+   padding: 15px 0;
+ }
+ 
+ .navbar-brand {
+   color: #2f4f38 !important;
+   font-size: 1.6rem;
+   font-weight: 700;
+   letter-spacing: 0.5px;
+ }
+ 
+ .nav-link {
+   color: #2d402d !important;
+   font-weight: 600;
+   margin-left: 20px;
+   transition: color 0.3s ease;
+ }
+ 
+ .nav-link:hover,
+ .nav-link.active {
+   color: #1b8a55 !important;
+ }
+ 
+ /* 🌿 Hero Section */
+ .hero-section {
+   position: relative;
+   min-height: 65vh;
+   width: 90%;
+   margin: 120px auto 80px;
+   border-radius: 35px;
+   background: linear-gradient(135deg, #d8e8b0, #c4d89c);
+   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+   padding: 80px 30px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ /* 💚 ฟ้อนต์ชื่อแบรนด์ */
+ .text-matcha {
+   color: #2f5d3a;
+   font-family: "Playfair Display", serif;
+   font-size: 7.5rem;
+   font-weight: 700;
+   letter-spacing: 1px;
+   margin-bottom: 18px;
+ }
+ 
+ /* 🍵 ข้อความรอง */
+ .hero-section p {
+   color: #2e3b2f;
+   max-width: 750px;
+   margin: 0 auto;
+   line-height: 1.8;
+   font-size: 1.1rem;
+   font-weight: 500;
+ }
+ 
+ /* 🍃 Auto Slide Image */
+ /* 🍃 Auto Slide Image */
+/* 🍃 Auto Slide Image */
+.slider {
+   width: 95%;              /* 🔹 เดิม 90% → ขยายอีกนิด */
+   max-width: 1300px;       /* 🔹 เดิม 1100px → ให้กินพื้นที่จอมากขึ้น */
+   margin: 50px auto;
+   overflow: hidden;
+   border-radius: 30px;
+   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .slides {
+   display: flex;
+   width: calc(100% * 4);
+   animation: slide 16s infinite;
+ }
+ 
+ .slides img {
+   width: 100%;
+   height: 420px;           /* 🔹 เดิม 350px → เพิ่มอีกนิดให้ภาพใหญ่เต็มตา */
+   object-fit: cover;
+   border-radius: 30px;
+   transition: transform 0.4s ease;
+ }
+ 
+ .slides img:hover {
+   transform: scale(1.04);  /* 🔹 ขยายนุ่ม ๆ ตอน hover */
+ }
+ 
+ @keyframes slide {
+   0% { transform: translateX(0); }
+   20% { transform: translateX(0); }
+   25% { transform: translateX(-100%); }
+   45% { transform: translateX(-100%); }
+   50% { transform: translateX(-200%); }
+   70% { transform: translateX(-200%); }
+   75% { transform: translateX(-300%); }
+   95% { transform: translateX(-300%); }
+   100% { transform: translateX(0); }
+ }
+ 
+ /* 🌿 Card Section */
+ .info-card {
+   background: #fff5f5;
+   border-radius: 16px;
+   padding: 25px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+   transition: all 0.3s ease;
+   height: 100%;
+ }
+ 
+ .info-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .info-card h5 {
+   font-family: "Playfair Display", serif;
+   font-weight: 700;
+ }
+ 
+ .info-card p {
+   color: #3e4a3f;
+   font-size: 1rem;
+   line-height: 1.7;
+ }
+ 
+ /* ✉️ Feedback Box */
+ .feedback-box:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+ }
+ 
+ /* 🍂 Footer */
+ footer {
+   background: linear-gradient(to top, #e9f5ec, #f7fff9);
+   border-top: 1px solid #d4e8d8;
+   padding: 60px 0;
+   text-align: center;
+ }
+ 
+ /* 📱 Responsive */
+ @media (max-width: 768px) {
+   .hero-section {
+     padding: 60px 20px;
+     margin-top: 100px;
+   }
+ 
+   .text-matcha {
+     font-size: 2.8rem;
+   }
+ 
+   .slides img {
+     height: 180px;
+   }
+ 
+   .info-card {
+     margin-bottom: 20px;
+   }
+ }
