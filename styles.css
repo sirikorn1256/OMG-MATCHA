@@ -1,4 +1,4 @@
-/* 🌱 Global Style */
+/* ----------------------------------------------------------- Global Style -----------------------------------------------------------*/
 body {
    font-family: "Prompt", sans-serif;
    background: #f4fff7;
@@ -7,7 +7,7 @@ body {
    scroll-behavior: smooth;
  }
  
- /* ✨ Navbar */
+ /* ----------------------------------------------------------- Navbar ----------------------------------------------------------- */
  .navbar {
    background: linear-gradient(90deg, #d6e6c3, #c4d89c);
    border-radius: 0 0 15px 15px;
@@ -34,7 +34,7 @@ body {
    color: #1b8a55 !important;
  }
  
- /* 🌿 Hero Section */
+ /* ----------------------------------------------------------- Hero Section ----------------------------------------------------------- */
  .hero-section {
    position: relative;
    min-height: 65vh;
@@ -50,7 +50,7 @@ body {
    align-items: center;
  }
  
- /* 💚 ฟ้อนต์ชื่อแบรนด์ */
+ /* ----------------------------------------------------------- ฟ้อนต์ชื่อแบรนด์ -----------------------------------------------------------*/
  .text-matcha {
    color: #2f5d3a;
    font-family: "Playfair Display", serif;
@@ -60,7 +60,7 @@ body {
    margin-bottom: 18px;
  }
  
- /* 🍵 ข้อความรอง */
+ /* ข้อความรอง */
  .hero-section p {
    color: #2e3b2f;
    max-width: 750px;
@@ -69,8 +69,7 @@ body {
    font-size: 1.1rem;
    font-weight: 500;
  }
- /* 🍵 Tea Cards */
-/* 🍵 Tea Cards (ปรับให้รูปเท่ากันทุกใบแบบพอดีสองรูปแรก) */
+ /*  -----------------------------------------------------------Tea Cards----------------------------------------------------------- */
 .tea-card {
    border-radius: 18px;
    background: #ffffff;
@@ -88,25 +87,24 @@ body {
  
  .tea-card img {
    width: 100%;
-   height: 480px; /* ✅ เท่ากับสองรูปแรก (ปรับมาให้เป๊ะ) */
-   object-fit: cover; /* ✅ ครอปให้เต็มกล่องแต่ยังไม่บิดภาพ */
+   height: 480px; /*  เท่ากับสองรูปแรก (ปรับมาให้เป๊ะ) */
+   object-fit: cover; /*  ครอปให้เต็มกล่องแต่ยังไม่บิดภาพ */
    border-radius: 18px;
    display: block;
    margin: 0 auto;
  }
  
- /* 📱 Responsive (มือถือเล็กลงหน่อย) */
+ /* ----------------------------------------------------------- Responsive (มือถือเล็กลงหน่อย)----------------------------------------------------------- */
  @media (max-width: 768px) {
    .tea-card img {
      height: 320px;
    }
  }
- /* 🍃 Auto Slide Image */
- /* 🍃 Auto Slide Image */
-/* 🍃 Auto Slide Image */
+ 
+/* ----------------------------------------------------------- Auto Slide Image -----------------------------------------------------------*/
 .slider {
-   width: 95%;              /* 🔹 เดิม 90% → ขยายอีกนิด */
-   max-width: 1300px;       /* 🔹 เดิม 1100px → ให้กินพื้นที่จอมากขึ้น */
+   width: 95%;              /*  เดิม 90% → ขยายอีกนิด */
+   max-width: 1300px;       /*  เดิม 1100px → ให้กินพื้นที่จอมากขึ้น */
    margin: 50px auto;
    overflow: hidden;
    border-radius: 30px;
@@ -121,14 +119,14 @@ body {
  
  .slides img {
    width: 100%;
-   height: 420px;           /* 🔹 เดิม 350px → เพิ่มอีกนิดให้ภาพใหญ่เต็มตา */
+   height: 420px;           /*  เดิม 350px → เพิ่มอีกนิดให้ภาพใหญ่เต็มตา */
    object-fit: cover;
    border-radius: 30px;
    transition: transform 0.4s ease;
  }
  
  .slides img:hover {
-   transform: scale(1.04);  /* 🔹 ขยายนุ่ม ๆ ตอน hover */
+   transform: scale(1.04);  /*  ขยายนุ่ม ๆ ตอน hover */
  }
  
  @keyframes slide {
@@ -143,7 +141,7 @@ body {
    100% { transform: translateX(0); }
  }
  
- /* 🌿 Card Section */
+ /* ----------------------------------------------------------- Card Section -----------------------------------------------------------*/
  .info-card {
    background: #fff5f5;
    border-radius: 16px;
@@ -169,13 +167,13 @@ body {
    line-height: 1.7;
  }
  
- /* ✉️ Feedback Box */
+ /* ----------------------------------------------------------- Feedback Box -----------------------------------------------------------*/
  .feedback-box:hover {
    transform: translateY(-5px);
    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
  }
  
- /* 🍂 Footer */
+ /* ----------------------------------------------------------- Footer -----------------------------------------------------------*/
  footer {
    background: linear-gradient(to top, #e9f5ec, #f7fff9);
    border-top: 1px solid #d4e8d8;
@@ -183,7 +181,7 @@ body {
    text-align: center;
  }
  
- /* 📱 Responsive */
+ /* ----------------------------------------------------------- Responsive -----------------------------------------------------------*/
  @media (max-width: 768px) {
    .hero-section {
      padding: 60px 20px;
